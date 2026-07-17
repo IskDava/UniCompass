@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hi, {{username}}!
+    <form method="POST" action="/account/logout">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+    <form method="POST" action="/account/delete">
+        {% csrf_token %}
+        <button type="submit">Delete account</button>
+    </form>
+</body>
+</html>

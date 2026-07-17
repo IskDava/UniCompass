@@ -1,0 +1,65 @@
+{{ majors|json_script:"majors" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Preferences</title>
+</head>
+<body>
+    <form method="POST" action="update_preferences">
+        <label>Choose your section</label>
+        <select name="section" id="section">
+            <option></option>
+            {% for section in sections %}
+            <option value="{{section}}">{{section}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label>Choose your major</label>
+        <select name="section" id="section">
+            <option></option>
+            {% for section in sections %}
+            <option value="{{section}}">{{section}}</option>
+            {% endfor %}
+        </select>
+        <br>
+
+        <label>Scholarship</label><input name="scholarship" type="checkbox" checked><br>
+
+        <label>Application deadline</label><input name="application-deadline" type="date"><br>
+
+        <label>Number of essays</label><input name="essays-count" type="number" placeholder="1"><br>
+
+        <label>Valuable competencies: </label><br>
+        {% for competency in competencies %}
+        <label>{{competency}}</label><input type="checkbox" name="{{competency}}">
+        {% endfor %}
+        <br>
+
+        <label>Attendance cost</label>
+        <input type="radio" name="attendance-cost" value="min">Minimal
+        <input type="radio" name="attendance-cost" value="max">Maximal<br>
+
+        <label>AP exams considered</label><input name="ap-exams" type="checkbox"><br>
+
+        <label>Minimal GPA</label><input type="number" step="0.01" name="min-GPA"><br>
+    </form>
+    <script>
+        const sections = JSON.parse(
+                document.getElementById('majors').textContent
+        );
+
+        const select = document.getElementById('section')
+
+        select.addEventListener("change", (e) => {
+            const option = select.value
+            const majors = sections[select.value]
+            majors.array.forEach(element => {
+                
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1000"
+     width="1000"
+     height="1000"
+     role="img"
+     aria-labelledby="title desc">
+  <g fill="none"
+     stroke="#1E670E"
+     stroke-width="10"
+     stroke-linejoin="miter"
+     stroke-miterlimit="10">
+
+    <!-- North point -->
+    <path d="M500 45 L595 390 L500 485 L405 390 Z" fill="none"/>
+    <path d="M500 45 L595 390 L500 485 Z"
+          fill="#1E670E" stroke="none"/>
+
+    <!-- East point -->
+    <path d="M955 500 L610 595 L515 500 L610 405 Z" fill="none"/>
+    <path d="M955 500 L610 595 L515 500 Z"
+          fill="#1E670E" stroke="none"/>
+
+    <!-- South point -->
+    <path d="M500 955 L405 610 L500 515 L595 610 Z" fill="none"/>
+    <path d="M500 955 L405 610 L500 515 Z"
+          fill="#1E670E" stroke="none"/>
+
+    <!-- West point -->
+    <path d="M45 500 L390 405 L485 500 L390 595 Z" fill="none"/>
+    <path d="M45 500 L390 405 L485 500 Z"
+          fill="#1E670E" stroke="none"/>
+  </g>
+</svg>

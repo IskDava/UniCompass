@@ -1,0 +1,39 @@
+
+html[theme="light"] {
+    --bg: hsl(0 0% 90%);
+
+    --block-1: hsl(0 0% 95%);
+    --block-2: hsl(0 50% 100%);
+
+    --text: hsl(0 0% 12%);
+    --text-muted: hsl(0 0% 38%);
+
+    --border: hsl(0 0% 78%);
+
+    --primary: hsl(109 76% 28%);
+    --primary-hovered: hsl(109, 76%, 35%);
+
+    --success: hsl(109 55% 85%);
+    --danger: hsl(0 60% 88%);
+}
+
+.unicard {
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 20px;
+    background-color: var(--block-1);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.unicard:hover {
+    background-color: var(--block-2);
+}
+
+.unis {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 15px;
+}
