@@ -1,1 +1,1 @@
-web: gunicorn UniCompass/UniCompass.wsgi
+web: gunicorn UniCompass.wsgi
